@@ -3,9 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>10Ц: ценности и вариант осей 2-3 уровня</title>
-  </head>
+    <meta name="author" content="Борис Майоров" />
+    <meta
+      name="keywords"
+      content="система 10Ц, инфографика, ценности, счастье, достоинство, координаты счастья, агентство счастья, визуализация, гуманитарные преобразования, счастье человека, счастье мира"
+    />
+  <title>10Ц: ценности и вариант осей 2-3 уровня</title>
+    <link rel="icon" href="https://wha2025.ru/favicon.ico" />
+    <link rel="stylesheet" href="css/style-base.css" />
+    <link rel="stylesheet" href="css/style-10z_info.css" />
+
+</head>
   <body>
+     <!-- ==================== ШАПКА страницы 10 ==================== -->
+  <header
+      style="
+        background-image: url('images/Shapka2.png');
+        background-size: cover;
+        background-position: left;
+      "
+    >
+      <div class="burger-wrapper">
+        <button class="burger" id="burger">☰</button>
+      </div>
+
+      <div class="header__row">
+        <div class="logo">
+          <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок" />
+          <div class="logo__text-group">
+            <h1 class="logo__text">Всемирное агентство счастья</h1>
+            <p class="logo__subtitle">Сила, деньги и знания на основе достоинства</p>
+          </div>
+        </div>
+
+        <nav class="menu" id="menu">
+          <ul class="menu__list">
+            <li><a class="menu__list-link" href="index.html">Главное</a></li>
+            <li>
+              <a class="menu__list-link" href="happiness.html">Счастье</a>
+            </li>
+            <li><a class="menu__list-link" href="about.html">О нас</a></li>
+            <li>
+              <a class="menu__list-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+<  </header>
+
+    <table width="90%" border="0" align="center" cellpadding="10" cellspacing="10">
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#DBDFE3">&nbsp;
+
+          <!-- Блок расширенных ценностей -->
     <h1>10Ц: ценности и вариант осей 2-3 уровня</h1>
     <p><b>Достоинство</b> — основа, ноль координатной системы.</p>
     <p><b>Счастье</b> — состояние объекта</p>
@@ -151,6 +202,30 @@
     <p>Экологическая: бережность, умеренность, ответственность за природу.</p>
     <p>потребления, справедливое распределение ресурсов, осознание Земли как общего дома</p>
     <p>Цифровая: честность информации, защита личных данных, ответственность в сети.</p>
-    <p>Глобальная: права человека, мир, солидарность, справедливость, единство в многообразии</p>
-  </body>
+    <p>Глобальная: права человека, мир, солидарность, справедливость, единство в многообразии.    </p>
+    </td>
+    </tr>
+  </tbody>
+</table>
+    
+    
+    <footer class="footer-right">
+      <p>© Всемирное агентство счастья 2025</p>
+  </footer>
+
+    <!-- ==================== СКРИПТ: бургер-меню ==================== -->
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger')
+        const menu = document.getElementById('menu')
+
+        if (!burger || !menu) return
+
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('menu--active')
+        })
+      })
+    </script>
+    
+</body>
 </html>
