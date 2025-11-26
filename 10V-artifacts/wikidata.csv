@@ -1,0 +1,2 @@
+CREATE,,item,,,"Достоинство","base/dignity.png","ImageObject","10V:base:dignity","primaryForm","Символ достоинства как сформированного свойства живого существа Home"
+CREATE,,item,,,"Достоинство (контекст)","base/Dignity10.png","ImageObject","10V:base:dignity-context","contextualForm","Контекстный символ достоинства — в условиях выбора, давления или диалога"
