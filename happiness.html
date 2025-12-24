@@ -63,6 +63,32 @@
       body {
         background-color: #bcd47c;
       }
+      .infographic {
+        max-width: 900px;
+        margin: 1rem auto;
+      }
+      .infographic a {
+        display: block;
+      }
+      .infographic img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 6px;
+      }
+      .infographic figcaption {
+        margin-top: 0.5rem;
+        color: #444;
+        font-size: 0.95rem;
+        text-align: center;
+        line-height: 1.4;
+      }
+      .infographic figcaption small {
+        display: block;
+        color: #666;
+        font-size: 0.85rem;
+        margin-top: 0.4rem;
+      }
     </style>
 
     <!-- Структурированные данные Organization -->
@@ -102,6 +128,19 @@
             }
           }
         ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "contentUrl": "https://wha2025.ru/images/D2025ish.jpg",
+        "url": "https://wha2025.ru/images/D2025ish.jpg",
+        "creator": { "@type": "Person", "name": "Борис Майоров" },
+        "copyrightHolder": { "@type": "Person", "name": "Борис Майоров" },
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "caption": "Формула счастья: сумма человеческих ценностей в координатном пространстве счастья.",
+        "name": "Координатное пространство счастья"
       }
     </script>
   </head>
@@ -169,7 +208,50 @@
     </header>
     <main>
       <section>
-        <img src="images/D2025.jpg" alt="Счастье" class="happiness-img" />
+        <figure
+          class="infographic"
+          id="fig-happiness"
+          aria-labelledby="fig-happiness-caption"
+        >
+          <a
+            href="images/D2025ish.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/D2025ish.jpg"
+              alt="Координатное пространство счастья"
+              class="happiness-img"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <figcaption id="fig-happiness-caption">
+            Формула счастья: сумма человеческих ценностей в координатном
+            пространстве счастья. Инфографика Бориса Майорова объединяет труд,
+            любовь, семью, здоровье, свободу и другие координаты в единую
+            систему, где сердцевина ромашки символизирует достоинство, а её
+            лепестки — права, свободы и законные интересы человека.
+            <small id="fig-happiness-meta"
+              >Автор: Борис Майоров. Полноразмерный файл:
+              <a href="images/D2025ish.jpg" target="_blank" rel="noopener"
+                >D2025ish.jpg</a
+              >. Источник:
+              <a
+                href="https://boris-1950.github.io/wha2025/D2025.jpg"
+                target="_blank"
+                rel="noopener"
+                >boris-1950.github.io</a
+              >. Лицензия:
+              <a
+                href="https://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank"
+                rel="noopener"
+                >CC BY‑SA 4.0</a
+              >.</small
+            >
+          </figcaption>
+        </figure>
         <section style="background: #f1eaea">
           <h2>Источники формирования ценностей человека</h2>
           <p>(Факторы, определяющие их приоритеты)</p>
