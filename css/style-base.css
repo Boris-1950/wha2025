@@ -48,7 +48,7 @@ ul li {
 main {
   margin-top: 5px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to bottom, #86c120, #061123);
+  background: none;
   margin-bottom: 5px;
 }
 
