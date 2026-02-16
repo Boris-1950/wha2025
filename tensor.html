@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    Тензор реализации (доступности) ценностей и индекс счастья — WHA
+  </title>
+  <meta name="description"
+    content="Тензор реализации (доступности) и индекс счастья человека в системе координат 3Ц. Математическое описание воздействия принудительных факторов на уровень счастья." />
+  <meta name="keywords"
+    content="тензор реализации (доступности), индекс счастья, система 3Ц, знания, сила, деньги, подавление, достоинство" />
+  <link rel="canonical" href="https://wha2025.ru/tensor.html" />
+  <meta http-equiv="Content-Language" content="ru" />
+
+  <link rel="stylesheet" href="css/style-base.css" />
+  <link rel="stylesheet" href="css/style-tensor.css" />
+
+  <!-- MathJax для отображения формул -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Тензор реализации (доступности) и индекс счастья" />
+  <meta property="og:description"
+    content="Математический анализ воздействия на счастье человека через систему ценностей 3Ц." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://wha2025.ru/tensor.html" />
+
+  <!-- Структурированные данные Article -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Тензор реализации (доступности) и индекс счастья человека",
+        "description": "Математическое описание системы координат 3Ц и влияния реализации (доступности) на уровень счастья.",
+        "url": "https://wha2025.ru/tensor.html"
+      }
+    </script>
+</head>
+
+<body>
+  <header style="
+        margin: -10px -10px 0px -10px;
+        background-image: url('images/header.jpg');
+        background-size: cover;
+        background-position: left;
+      ">
+    <div class="burger-wrapper">
+      <button class="burger" id="burger">☰</button>
+    </div>
+
+    <div class="header__row">
+      <div class="logo">
+        <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок" />
+        <div class="logo__text-group">
+          <h1 class="logo__text">Всемирное агентство счастья</h1>
+          <p class="logo__subtitle">
+            Сила, деньги и знания на основе достоинства
+          </p>
+        </div>
+      </div>
+
+      <nav class="menu" id="menu">
+        <ul class="menu__list">
+          <li><a class="menu__list-link" href="index.html">Главное</a></li>
+          <li>
+            <a class="menu__list-link" href="happiness.html">Счастье</a>
+          </li>
+          <li>
+            <a class="menu__list-link" href="manifesto.html">Манифест</a>
+          </li>
+          <li><a class="menu__list-link" href="about.html">О нас</a></li>
+          <li>
+            <a class="menu__list-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tensor-main">
+    <h1>
+      Тензор реализации (доступности) ценностей и индекс счастья человека
+    </h1>
+
+    <p>
+      В системе координат 3Ц каждый человек представлен вектором своих
+      ценностей:
+    </p>
+    <p>
+      Тензор реализации (доступности) ценностей — это линейный оператор,
+      показывающий, какая доля знаний, силы и денег человека доступна для
+      реализации в текущих условиях, независимо от причин ограничения —
+      внешних или внутренних.
+    </p>
+    <div class="formula">
+      $$ \vec{V} = \begin{pmatrix} K \\ S \\ M \end{pmatrix} $$
+    </div>
+
+    <p>где:</p>
+
+    <ul>
+      <li>K — знания</li>
+      <li>S — сила</li>
+      <li>M — деньги</li>
+    </ul>
+
+    <p>Индекс счастья человека определяется длиной этого вектора:</p>
+
+    <div class="formula">$$ H = \sqrt{ K^2 + S^2 + M^2 } $$</div>
+
+    <h2>Тензор подавления</h2>
+
+    <p>Любое принудительное воздействие описывается тензором реализации (доступности):</p>
+
+    <div class="formula">
+      $$ \mathbf{T} = \begin{pmatrix} 1 - p_K & 0 & 0 \\ 0 & 1 - p_S & 0
+      \\ 0 & 0 & 1 - p_M \end{pmatrix} $$
+    </div>
+
+    <p>После применения тензора новый вектор:</p>
+
+    <div class="formula">$$ \vec{V'} = \mathbf{T}\vec{V} $$</div>
+
+    <h2>Индекс счастья после реализации (доступности)</h2>
+
+    <div class="formula">
+      $$ H = \sqrt{ (1-p_K)^2 K^2 + (1-p_S)^2 S^2 + (1-p_M)^2 M^2 } $$
+    </div>
+
+    <h2>Предельный случай: полное подавление достоинства</h2>
+
+    <div class="formula">
+      $$ \mathbf{T} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0
+      \end{pmatrix} $$
+    </div>
+
+    <div class="formula">$$ H = 0 $$</div>
+
+    <p>Это соответствует полному уничтожению вектора ценностей человека.</p>
+
+    <hr />
+
+    <h2>Применение к расширенной системе 10Ц</h2>
+
+    <p>
+      Представленный математический аппарат полностью применим к системе из 10 ценностей. В этом случае вектор ценностей
+      становится 10-мерным, а тензор реализации (доступности) — матрицей 10×10, где каждая диагональная компонента отвечает за
+      соответствующую ценность. Индекс счастья по-прежнему определяется евклидовой нормой полученного
+      вектора, а математическая логика  остаётся неизменной.</p>
+
+    <footer style="
+          text-align: center;
+          margin-top: 40px;
+          color: #666;
+          font-size: 12px;
+        ">
+      <p>
+        WHA — Всемирное агентство счастья<br />
+        © 2026
+      </p>
+    </footer>
+  </main>
+
+  <!-- Скрипт: бургер-меню -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.getElementById('burger')
+      const menu = document.getElementById('menu')
+
+      if (!burger || !menu) return
+
+      burger.addEventListener('click', () => {
+        menu.classList.toggle('menu--active')
+      })
+    })
+  </script>
+</body>
+
+</html>
