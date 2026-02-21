@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -63,7 +63,7 @@
       window.embeddedChatbotConfig = {
         chatbotId: 'Yqnf7c093CQlvPBjf87c4',
         domain: 'www.chatbase.co',
-      }
+      };
     </script>
 
     <script
@@ -174,19 +174,19 @@
     src="https://www.googletagmanager.com/gtag/js?id=G-35C5HF9P63"
   ></script>
   <script>
-    window.dataLayer = window.dataLayer || []
+    window.dataLayer = window.dataLayer || [];
     function gtag() {
-      dataLayer.push(arguments)
+      dataLayer.push(arguments);
     }
-    gtag('js', new Date())
+    gtag('js', new Date());
 
-    gtag('config', 'G-35C5HF9P63')
+    gtag('config', 'G-35C5HF9P63');
   </script>
   <body>
     <!-- ==================== ШАПКА главной страницы 10Ц ==================== -->
     <header
       style="
-      margin: -10px -10px 0px -10px;
+        margin: -10px -10px 0px -10px;
         background-image: url('images/header.jpg');
         background-size: cover;
         background-position: left;
@@ -235,30 +235,34 @@
         </div>
       </div>
     -->
- <h3 style="
+      <h3
+        style="
           color: blanchedalmond;
           font-size: 12px;
           text-align: left;
           margin: 90px 70px 0px 10px;
-        ">Добро пожаловать в пространство счастья!</h3>
-
-</header>
-    <p
-        style="
-          color: rgb(124, 75, 2);
-          font-size: 12px;
-          text-align: left;
-          margin: 5px 70px 0px 10px;
         "
       >
-        Человек — не ресурс экономики, не объект манипуляций и социальных экспериментов.<br>
-        Человек — носитель неотъемлемого достоинства по факту жизни для реализации своего счастья.
-        Любая система оправдана только тогда, когда она опирается на достоинство
-        и умножает параметры счастья человека. Рост без смысла разрушает. Контроль без
-        доверия калечит. Прогресс без солидарности обнуляет будущее. Устойчивое
-        общество начинается с достоинства.
-      </p>
-  
+        Добро пожаловать в пространство счастья!
+      </h3>
+    </header>
+    <p
+      style="
+        color: rgb(124, 75, 2);
+        font-size: 12px;
+        text-align: left;
+        margin: 5px 70px 0px 10px;
+      "
+    >
+      Человек — не ресурс экономики, не объект манипуляций и социальных
+      экспериментов.<br />
+      Человек — носитель неотъемлемого достоинства по факту жизни для реализации
+      своего счастья.<br />
+      Любая система оправдана только тогда, когда она опирается
+      на достоинство и умножает параметры счастья человека. Рост без смысла
+      разрушает. Контроль без доверия калечит. Прогресс без солидарности
+      обнуляет будущее. Устойчивое общество начинается с достоинства.
+    </p>
 
     <!-- Заголовок и содержание тела страницы -->
     <main>
@@ -400,26 +404,26 @@
     <!-- ==================== СКРИПТ: бургер-меню ==================== -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.getElementById('burger')
-        const menu = document.getElementById('menu')
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
 
-        if (!burger || !menu) return
+        if (!burger || !menu) return;
 
         burger.addEventListener('click', () => {
-          menu.classList.toggle('menu--active')
-        })
-      })
+          menu.classList.toggle('menu--active');
+        });
+      });
     </script>
     <script>
-      let valuesData = []
+      let valuesData = [];
 
       fetch('./values_with_symbols.json')
         .then((r) => r.json())
         .then((data) => {
-          valuesData = data
-          console.log('Ценности загружены:', valuesData)
+          valuesData = data;
+          console.log('Ценности загружены:', valuesData);
         })
-        .catch((err) => console.error('Ошибка загрузки JSON:', err))
+        .catch((err) => console.error('Ошибка загрузки JSON:', err));
     </script>
   </body>
 </html>
