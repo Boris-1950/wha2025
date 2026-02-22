@@ -4,5 +4,8 @@
   "editor.formatOnSave": true,
   "prettier.requireConfig": true,
   "cSpell.languageSettings": [],
-  "workbench.scm.visible": false
+ "editor.fontFamily": "'Fira Code', 'Noto Color Emoji', monospace",
+ 
+ 
+
 }
