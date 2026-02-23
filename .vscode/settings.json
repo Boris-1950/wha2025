@@ -5,7 +5,7 @@
   "prettier.requireConfig": true,
   "cSpell.languageSettings": [],
  "editor.fontFamily": "'Fira Code', 'Noto Color Emoji', monospace",
- 
- 
+ "editor.fontFamily": "'Cascadia Code', 'Segoe UI Emoji', 'Segoe UI Emoji Flags', monospace"
+
 
 }
