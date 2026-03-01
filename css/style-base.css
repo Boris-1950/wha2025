@@ -137,6 +137,45 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* === Подменю для пунктов меню === */
+.menu__list li {
+  position: relative; /* нужно для абсолютного позиционирования вложенного списка */
+}
+
+.menu__sublist {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; /* левый край привязан к левому краю родительского <li> */
+  margin: 0;
+  padding: 4px 0;
+  padding-left: 0; /* убедиться, что нет отступа внутри */
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 10;
+}
+
+.menu__sublist li {
+  white-space: nowrap;
+}
+
+.menu__sublist .menu__list-link {
+  display: block;
+  padding: 4px 8px;
+  color: rgb(62, 63, 65);
+}
+
+.menu__sublist .menu__list-link:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* показать подменю при наведении на родительский li */
+.menu__list li:hover > .menu__sublist {
+  display: block;
+}
+
 /* === Шапка: визуальные блоки === */
 
 /* Основной контейнер шапки страницы: задаёт структуру, центрирование и цвет */
