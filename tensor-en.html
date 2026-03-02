@@ -1,97 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head> … 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tensor Framework — World Happiness Agency</title>
+
     <link rel="stylesheet" href="css/style-base.css" />
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "Tensor Framework for Measuring and Optimizing Human Dignity Realization",
+        "author": {
+          "@type": "Person",
+          "name": "Boris Mayorov"
+        },
+        "datePublished": "2026-02-23",
+        "description": "A mathematical foundation for the Happiness Index in N-dimensional value space based on the realization tensor and dignity as an invariant (D=1).",
+        "keywords": "Human dignity, happiness index, tensor formalism, AI alignment, 10-C system"
+      }
+    </script>
+
     <style>
-        … 
-        /* menu background on light grey */
-        nav.menu { background-color: #f4f7f6; padding: 8px 0; }
-    </style>
-  </head>
-  <body>
-
-<header>
-  <nav class="menu" id="menu">
-    <ul class="menu__list">
-      <li><a class="menu__list-link" href="index.html">Home</a></li>
-      <li><a class="menu__list-link" href="happiness.html">Happiness</a></li>
-      <li>
-        <a class="menu__list-link" href="manifesto-en.html">Manifesto</a>
-        <ul class="menu__sublist">
-          …
-        </ul>
-      </li>
-      …
-    </ul>
-  </nav>
-</header>
-
-<div class="paper-container">
-    <!-- existing article content… --><!doctype html>
-<html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tensor Framework — World Happiness Agency</title>
-
-        <link rel="stylesheet" href="css/style-base.css" />
-
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script
-          id="MathJax-script"
-          async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        ></script>
-
-        <script type="application/ld+json">
-          {
-            "@context": "https://schema.org",
-            "@type": "ScholarlyArticle",
-            "headline": "Tensor Framework for Measuring and Optimizing Human Dignity Realization",
-            "author": {
-              "@type": "Person",
-              "name": "Boris Mayorov"
-            },
-            "datePublished": "2026-02-23",
-            "description": "A mathematical foundation for the Happiness Index in N-dimensional value space based on the realization tensor and dignity as an invariant (D=1).",
-            "keywords": "Human dignity, happiness index, tensor formalism, AI alignment, 10-C system"
-          }
-        </script>
-
-        <style>
-          body {
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 900px;
+            max-width: 1000px; /* Немного расширил для удобства меню */
             margin: 0 auto;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f7f6;
-          }
-          .paper-container {
+        }
+        
+        /* Стили шапки из вашего шаблона */
+        .site-header {
+            margin: 0;
+            background-image: url('images/header.jpg');
+            background-size: cover;
+            background-position: left;
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+
+        .header__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo__image {
+            width: 60px;
+            height: auto;
+        }
+
+        .logo__text {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #fff;
+            border: none;
+            padding: 0;
+        }
+
+        .logo__subtitle {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Контентная область */
+        .paper-container {
             background: white;
             padding: 40px;
+            margin: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-          }
-          h1 {
+        }
+
+        h1.document-title {
             color: #2c3e50;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 10px;
-          }
-          h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        h2 {
             color: #2980b9;
             margin-top: 30px;
-          }
-          .abstract {
+        }
+
+        .abstract {
             font-style: italic;
             background: #eef2f3;
             padding: 20px;
-            border-left: 5px solid #2980b9;
+            border-left: 5px solid #5786a5;
             margin: 20px 0;
-          }
-          .formula {
+        }
+
+        .formula {
             background: #f9f9f9;
             padding: 15px;
             border-radius: 5px;
@@ -99,137 +117,170 @@
             text-align: center;
             margin: 15px 0;
             border: 1px solid #ddd;
-          }
-          .footer {
+        }
+
+        .footer {
             margin-top: 50px;
             font-size: 0.9em;
             color: #7f8c8d;
             text-align: center;
             border-top: 1px solid #ddd;
             padding-top: 20px;
-          }
-          .keywords {
+        }
+
+        .keywords {
             font-weight: bold;
             margin-top: 20px;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="paper-container">
-          <header>
-            <h1>
-              Tensor Framework for Measuring and Optimizing Human Dignity
-              Realization
-            </h1>
-            <p>
-              <strong
-                >A Mathematical Foundation for the Happiness Index in
-                N-Dimensional Value Space</strong
-              >
-            </p>
-            <p><em>Author: Boris Mayorov, Independent Researcher</em></p>
-          </header>
+        }
 
-          <section class="abstract">
-            <strong>Abstract:</strong> This paper introduces a tensor-based
-            mathematical framework for measuring and optimizing the realization
-            of human dignity in an N-dimensional value space. Human happiness is
-            defined as the norm of realized values obtained through the action
-            of a realization tensor on the potential value vector. The framework
-            is invariant under dimensional expansion and applies at individual,
-            regional, and planetary scales.
-          </section>
+        /* Меню (упрощенные стили для корректного отображения) */
+        .menu__list {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
 
-          <section>
+        .menu__list-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu__sublist {
+            display: none; /* Для краткости, полноценное выпадающее меню требует вашего CSS */
+        }
+
+        @media (max-width: 768px) {
+            .header__row { flex-direction: column; align-items: flex-start; }
+            .menu__list { flex-direction: column; display: none; margin-top: 20px; }
+            .menu.active .menu__list { display: flex; }
+            .burger { background: none; border: 1px solid white; color: white; padding: 5px 10px; cursor: pointer; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="burger-wrapper">
+            <button class="burger" id="burger">☰</button>
+        </div>
+
+        <div class="header__row">
+            <div class="logo">
+                <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок" />
+                <div class="logo__text-group">
+                    <h1 class="logo__text">Всемирное агентство счастья</h1>
+                    <p class="logo__subtitle">Сила, деньги и знания на основе достоинства</p>
+                </div>
+            </div>
+
+            <nav class="menu" id="menu">
+                <ul class="menu__list">
+                    <li><a class="menu__list-link" href="index.html">Главное</a></li>
+                    <li><a class="menu__list-link" href="happiness.html">Счастье</a></li>
+                    <li><a class="menu__list-link" href="manifesto.html">Манифест</a></li>
+                    <li><a class="menu__list-link" href="about.html">О нас</a></li>
+                    <li><a class="menu__list-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="paper-container">
+        <h1 class="document-title">
+            Tensor Framework for Measuring and Optimizing Human Dignity Realization
+        </h1>
+        <p>
+            <strong>A Mathematical Foundation for the Happiness Index in N-Dimensional Value Space</strong>
+        </p>
+        <p><em>Author: Boris Mayorov, Independent Researcher</em></p>
+          
+        <section class="abstract">
+            <strong>Abstract:</strong> This paper introduces a tensor-based mathematical framework for measuring and optimizing the realization of human dignity in an N-dimensional value space. Human happiness is defined as the norm of realized values obtained through the action of a realization tensor on the potential value vector. The framework is invariant under dimensional expansion and applies at individual, regional, and planetary scales.
+        </section>
+
+        <section>
             <h2>1. Introduction</h2>
             <p>
-              Modern civilization lacks a formal measurable operator describing
-              the realization of human dignity. We establish dignity as an
-              invariant intrinsic property of every human:
+                Modern civilization lacks a formal measurable operator describing the realization of human dignity. We establish dignity as an invariant intrinsic property of every human:
             </p>
             <div class="formula">$$D = 1$$</div>
             <p>
-              This formalism describes how systems transform human potential
-              into realized values.
+                This formalism describes how systems transform human potential into realized values.
             </p>
-          </section>
+        </section>
 
-          <section>
+        <section>
             <h2>2. Value Space</h2>
             <p>
-              Define an N-dimensional value space \(V = \mathbb{R}^N\). Each
-              human has a potential value vector \(P^i \in V\), where \(i = 1,
-              \dots, N\). Components represent Knowledge, Strength, Economic
-              Resources, etc.
+                Define an N-dimensional value space \(V = \mathbb{R}^N\). Each human has a potential value vector \(P^i \in V\), where \(i = 1, \dots, N\). Components represent Knowledge, Strength, Economic Resources, etc.
             </p>
-          </section>
+        </section>
 
-          <section>
+        <section>
             <h2>3. Realization Tensor</h2>
             <p>
-              Define the realization tensor \(R^i_j\), where \(0 \le R^i_j \le
-              1\). Realized values \(V^i\) are calculated as:
+                Define the realization tensor \(R^i_j\), where \(0 \le R^i_j \le 1\). Realized values \(V^i\) are calculated as:
             </p>
             <div class="formula">$$V^i = R^i_j P^j$$</div>
             <p>
-              This tensor incorporates internal (biological), regional
-              (political), and planetary factors.
+                This tensor incorporates internal (biological), regional (political), and planetary factors.
             </p>
-          </section>
+        </section>
 
-          <section>
+        <section>
             <h2>4. Metric Tensor and Happiness</h2>
             <p>
-              Define the metric tensor \(g_{ij}\) which defines the weighting of
-              value space. The Happiness Index \(H\) is defined as the scalar
-              norm of realized values:
+                Define the metric tensor \(g_{ij}\) which defines the weighting of value space. The Happiness Index \(H\) is defined as the scalar norm of realized values:
             </p>
             <div class="formula">
-              $$H = \sqrt{g_{ij} V^i V^j} = \sqrt{g_{ij} R^i_k R^j_l P^k P^l}$$
+                $$H = \sqrt{g_{ij} V^i V^j} = \sqrt{g_{ij} R^i_k R^j_l P^k P^l}$$
             </div>
-          </section>
+        </section>
 
-          <section>
+        <section>
             <h2>5. Hierarchical Structure</h2>
             <p>The realization tensor can be decomposed across scales:</p>
             <div class="formula">
-              $$R^i_j = R^i_k (\text{individual}) \cdot R^k_l (\text{region})
-              \cdot R^l_j (\text{planet})$$
+                $$R^i_j = R^i_k (\text{individual}) \cdot R^k_l (\text{region}) \cdot R^l_j (\text{planet})$$
             </div>
-          </section>
+        </section>
 
-          <section>
+        <section>
             <h2>6. AI Alignment Principle</h2>
             <p>
-              An aligned artificial intelligence system must prioritize the
-              optimization of the realization tensor rather than simple economic
-              output:
+                An aligned artificial intelligence system must prioritize the optimization of the realization tensor rather than simple economic output:
             </p>
             <div class="formula">
-              $$\max \left( \sqrt{g_{ij} R^i_k R^j_l P^k P^l} \right)$$
+                $$\max \left( \sqrt{g_{ij} R^i_k R^j_l P^k P^l} \right)$$
             </div>
-          </section>
+        </section>
 
-          <section>
+        <section>
             <h2>7. Conclusion</h2>
             <p>
-              The framework enables objective measurement of human dignity
-              realization at all scales, providing a formal optimization target
-              for an AI-aligned civilization.
+                The framework enables objective measurement of human dignity realization at all scales, providing a formal optimization target for an AI-aligned civilization.
             </p>
             <p class="keywords">
-              Keywords: Human dignity, happiness index, tensor formalism, AI
-              alignment, value space.
+                Keywords: Human dignity, happiness index, tensor formalism, AI alignment, value space.
             </p>
-          </section>
+        </section>
 
-          <footer class="footer">
+        <footer class="footer">
             © 2026 World Happiness Agency. Author: Boris Mayorov.<br />
-            <a href="index.html">Back to Main Page</a> |
-            <a href="mailto:b-i@list.ru">Contact Author</a>
-          </footer>
-        </div>
-      </body>
-    </html>
-  </body>
+            <a href="index.html" style="color: #2980b9; text-decoration: none;">Back to Main Page</a> |
+            <a href="mailto:b-i@list.ru" style="color: #2980b9; text-decoration: none;">Contact Author</a>
+        </footer>
+    </div>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
