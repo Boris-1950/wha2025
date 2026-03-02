@@ -1,0 +1,71 @@
+/* Стили для страницы mat.html */
+
+/* контейнер для удобочитаемой ширины */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* фон шапки (светло‑серый) */
+header {
+  background-color: #dbdada;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  color: #444;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.8rem 0;
+  color: #555;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+ul {
+  margin: 0 0 1rem 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* MathJax формулы (если используются) */
+.MathJax {
+  font-size: 1.1em;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}

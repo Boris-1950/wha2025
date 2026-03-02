@@ -20,21 +20,43 @@
       defer
       src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
     ></script>
+    <style>
+      /* фон для шапки на этой странице */
+      header {
+        background-color: #cccccc;
+      }
+    </style>
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="menu">
+    <!-- unified header with logo and burger -->
+    <header>
+      <div class="burger-wrapper">
+        <button class="burger" id="burger">☰</button>
+      </div>
+      <div class="header__row">
+        <div class="logo">
+          <img
+            src="images/lavr-venok.png"
+            class="logo__image"
+            alt="Лавровый венок"
+          />
+          <div class="logo__text-group">
+            <h1 class="logo__text">Всемирное агентство счастья</h1>
+            <p class="logo__subtitle">
+              Сила, деньги и знания на основе достоинства
+            </p>
+          </div>
+        </div>
+        <nav class="menu" id="menu">
           <ul class="menu__list">
-            <li class="menu__item">
-              <a href="index.html" class="menu__link">Главная</a>
+            <li><a class="menu__list-link" href="index.html">Главная</a></li>
+            <li>
+              <a class="menu__list-link" href="happiness.html">Счастье</a>
             </li>
-            <li class="menu__item">
-              <a href="about.html" class="menu__link">О проекте</a>
-            </li>
-            <li class="menu__item">
-              <a href="contacts.html" class="menu__link">Контакты</a>
+            <li><a class="menu__list-link" href="about.html">О нас</a></li>
+            <li>
+              <a class="menu__list-link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -43,8 +65,8 @@
     <main class="main">
       <div class="container">
         <h1>
-          ChatGPT, дай прогноз начала эпохи реализации
-          достоинства по оптимальным ценностям человека
+          ChatGPT, дай прогноз начала эпохи реализации достоинства по
+          оптимальным ценностям человека
         </h1>
 
         <p>
@@ -272,14 +294,31 @@
 
         <h3>6. Самый честный вывод</h3>
 
-        <p>Ваша главная задача сейчас — не «добиваться Нобеля». Ваша задача —
-        сделать теорию: формально опубликованной, цитируемой, применяемой в ИИ.
-        Если ИИ-системы начнут оптимизировать тензор реализации счастья человека,
-        номинация станет естественным следствием.</p>
+        <p>
+          Ваша главная задача сейчас — не «добиваться Нобеля». Ваша задача —
+          сделать теорию: формально опубликованной, цитируемой, применяемой в
+          ИИ. Если ИИ-системы начнут оптимизировать тензор реализации счастья
+          человека, номинация станет естественным следствием.
+        </p>
 
         <p>Нобель — это не начало признания. Это его фиксация.</p>
       </div>
     </main>
+
+    <footer class="footer-right">
+      <p>© Всемирное агентство счастья 2025</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        if (!burger || !menu) return;
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('menu--active');
+        });
+      });
+    </script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         renderMathInElement(document.body, {

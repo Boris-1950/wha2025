@@ -78,5 +78,10 @@ main ul {
 .subtitle {
   margin: 0 0 0.35rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #aaa9a9;
+}
+
+/* светло-серый фон для шапки */
+header {
+  background-color: #cccccc;
 }

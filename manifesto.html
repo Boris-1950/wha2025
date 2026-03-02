@@ -12,6 +12,7 @@
 
     <title>МАНИФЕСТ ЭПОХИ ДОСТОИНСТВА — Борис Майоров</title>
     <link rel="stylesheet" href="css/style-base.css" />
+    <link rel="stylesheet" href="css/manifiesto.css" />
 
     <link
       rel="canonical"
@@ -103,6 +104,39 @@
     </style>
   </head>
   <body>
+    <!-- стандартная шапка с логотипом и навигацией -->
+    <header>
+      <div class="burger-wrapper">
+        <button class="burger" id="burger">☰</button>
+      </div>
+      <div class="header__row">
+        <div class="logo">
+          <img
+            src="images/lavr-venok.png"
+            class="logo__image"
+            alt="Лавровый венок"
+          />
+          <div class="logo__text-group">
+            <h1 class="logo__text">Всемирное агентство счастья</h1>
+            <p class="logo__subtitle">
+              Сила, деньги и знания на основе достоинства
+            </p>
+          </div>
+        </div>
+        <nav class="menu" id="menu">
+          <ul class="menu__list">
+            <li><a class="menu__list-link" href="index.html">Главная</a></li>
+            <li>
+              <a class="menu__list-link" href="happiness.html">Счастье</a>
+            </li>
+            <li><a class="menu__list-link" href="about.html">О нас</a></li>
+            <li>
+              <a class="menu__list-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <nav id="toc">
       <h3 style="text-align: left">Оглавление</h3>
       <ul>
@@ -300,7 +334,7 @@
       </p>
 
       <p class="highlight">Эта эпоха начинается с каждого из нас.</p>
-      
+
       <p>Борис Майоров, 31.12.2025</p>
       <hr />
 
@@ -437,5 +471,20 @@
 
       <footer>© Борис Майоров, 7.01.2026</footer>
     </main>
+
+    <footer class="footer-right">
+      <p>© Всемирное агентство счастья 2025</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        if (!burger || !menu) return;
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('menu--active');
+        });
+      });
+    </script>
   </body>
 </html>
