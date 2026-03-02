@@ -29,9 +29,10 @@ h1, h2, h3 {
   text-align: left;
 }
 p {
-  margin-bottom: 0px;
-  margin: 4px 0;
-  color: #252424;
+    margin-bottom: 0px;
+    margin: 4px 0;
+    color: #0A379A;
+    font-size: 14px;
 }
 
 ul {
@@ -325,4 +326,3 @@ justify-content: space-around - равномерно распределяет п
     gap: 20px;
   }
 }
-
