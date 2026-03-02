@@ -57,3 +57,30 @@ li {
     font-size: 1.2rem;
   }
 }
+
+/* Шапка с фоном */
+header.header {
+  padding: 1rem 0; /* пространстово сверху/снизу */
+  color: #fff;
+  background-color: #cccccc; /* светло-серый фон */
+}
+
+/* контейнер строки шапки убираем ограничение */
+header.header .header__row {
+  max-width: none;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ссылки меню */
+header.header .menu__list-link,
+header.header .menu__link {
+  color: #fff; /* светлые ссылки на тёмном фоне */
+}
+
+header.header .menu__list-link:hover,
+header.header .menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
