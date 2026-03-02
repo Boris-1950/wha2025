@@ -80,6 +80,11 @@ header.header .menu__link {
   color: #fff; /* светлые ссылки на тёмном фоне */
 }
 
+/* выпадающее меню должно оставаться тёмным на светлом фоне */
+header.header .menu__sublist .menu__list-link {
+  color: rgb(62, 63, 65);
+}
+
 header.header .menu__list-link:hover,
 header.header .menu__link:hover {
   background-color: rgba(255, 255, 255, 0.1);

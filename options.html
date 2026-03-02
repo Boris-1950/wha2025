@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -19,13 +19,13 @@
     src="https://www.googletagmanager.com/gtag/js?id=G-35C5HF9P63"
   ></script>
   <script>
-    window.dataLayer = window.dataLayer || []
+    window.dataLayer = window.dataLayer || [];
     function gtag() {
-      dataLayer.push(arguments)
+      dataLayer.push(arguments);
     }
-    gtag('js', new Date())
+    gtag('js', new Date());
 
-    gtag('config', 'G-35C5HF9P63')
+    gtag('config', 'G-35C5HF9P63');
   </script>
   <!-- ==================== ИИ АССИСТЕНТ ==================== -->
   <div
@@ -134,6 +134,26 @@
             <li><a class="menu__list-link" href="index.html">Главное</a></li>
             <li>
               <a class="menu__list-link" href="happiness.html">Счастье</a>
+            </li>
+            <li>
+              <a class="menu__list-link" href="manifesto.html">Манифест</a>
+              <ul class="menu__sublist">
+                <li>
+                  <a class="menu__list-link" href="foundations.html">Основы</a>
+                </li>
+                <li>
+                  <a class="menu__list-link" href="matman.html">Расчёт</a>
+                </li>
+                <li>
+                  <a class="menu__list-link" href="mat.html">Аксиоматика</a>
+                </li>
+                <li>
+                  <a class="menu__list-link" href="tensor.html">Тензор</a>
+                </li>
+                <li>
+                  <a class="menu__list-link" href="Theory.html">Коротко</a>
+                </li>
+              </ul>
             </li>
             <li><a class="menu__list-link" href="about.html">О нас</a></li>
             <li>
@@ -295,54 +315,54 @@
     </footer>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.getElementById('burger')
-        const menu = document.getElementById('menu')
-        const assistantBtn = document.getElementById('assistantBtn')
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        const assistantBtn = document.getElementById('assistantBtn');
 
         // Бургер-меню: переключение класса
         if (burger && menu) {
           burger.addEventListener('click', () => {
-            menu.classList.toggle('menu--active')
-          })
+            menu.classList.toggle('menu--active');
+          });
         }
 
         // Ассистент: вызов окна или действия
         if (assistantBtn) {
           assistantBtn.addEventListener('click', () => {
-            alert('ИИ ассистент готов помочь!')
+            alert('ИИ ассистент готов помочь!');
             // Здесь можно подключить реальный чат-виджет
-          })
+          });
         }
-      })
+      });
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.getElementById('burger')
-        const menu = document.getElementById('menu')
-        const assistantBtn = document.getElementById('assistantBtn')
-        const assistantPanel = document.getElementById('assistant-panel')
-        const assistantClose = document.getElementById('assistant-close')
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        const assistantBtn = document.getElementById('assistantBtn');
+        const assistantPanel = document.getElementById('assistant-panel');
+        const assistantClose = document.getElementById('assistant-close');
 
         if (burger && menu) {
           burger.addEventListener('click', () => {
-            menu.classList.toggle('menu--active')
-          })
+            menu.classList.toggle('menu--active');
+          });
         }
 
         if (assistantBtn && assistantPanel) {
           assistantBtn.addEventListener('click', () => {
-            assistantPanel.style.display = 'flex'
-            assistantBtn.style.display = 'none'
-          })
+            assistantPanel.style.display = 'flex';
+            assistantBtn.style.display = 'none';
+          });
         }
 
         if (assistantClose && assistantPanel && assistantBtn) {
           assistantClose.addEventListener('click', () => {
-            assistantPanel.style.display = 'none'
-            assistantBtn.style.display = 'block'
-          })
+            assistantPanel.style.display = 'none';
+            assistantBtn.style.display = 'block';
+          });
         }
-      })
+      });
     </script>
   </body>
 </html>
