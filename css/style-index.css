@@ -98,3 +98,9 @@
   color: #2a4d69;
   font-size: 1.0em;
 }
+
+/* Фиксированная высота шапки на главной странице */
+header .header__top {
+  min-height: 100px;
+  height: 200px;
+}
