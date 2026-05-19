@@ -12,23 +12,30 @@ body {
   font-size: 12px;
   line-height: 1.1;
   text-decoration: none;
-  
 }
 
-h1 { font-size: 14px; }
-h2 { font-size: 13px; }
-h3 { font-size: 12px; }
+h1 {
+  font-size: 14px;
+}
+h2 {
+  font-size: 13px;
+}
+h3 {
+  font-size: 12px;
+}
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bold;
   margin-bottom: 4px;
   text-align: left;
 }
 p {
-    margin-bottom: 0px;
-    margin: 4px 0;
-    
-    font-size: 14px;
+  margin-bottom: 0px;
+  margin: 4px 0;
+
+  font-size: 14px;
 }
 
 ul {
@@ -149,7 +156,7 @@ section {
   padding-left: 0; /* убедиться, что нет отступа внутри */
   list-style: none;
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   min-width: 120px;
   z-index: 10;
 }
@@ -165,7 +172,7 @@ section {
 }
 
 .menu__sublist .menu__list-link:hover {
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* показать подменю при наведении на родительский li */
@@ -177,7 +184,7 @@ section {
 
 /* Основной контейнер шапки страницы: задаёт структуру, центрирование и цвет */
 .header__top {
-  min-height: 300px; /* минимальная высота шапки */
+  min-height: clamp(360px, 42vh, 520px); /* высота шапки для страниц первого уровня */
   display: flex;
   flex-direction: column; /* вертикальное расположение дочерних элементов */
   align-items: center; /* горизонтальное центрирование */
@@ -187,6 +194,21 @@ section {
   color: #cbf751; /* базовый цвет текста */
   padding: 0;
   margin: 0;
+}
+
+header.header--top {
+  min-height: 210px;
+  height: 210px;
+}
+
+header.header--top .header__top {
+  min-height: 210px;
+  height: 210px;
+}
+
+header {
+  margin: -10px -10px 0 -10px;
+  padding: 0;
 }
 
 /* Внутренний блок с заголовком и описанием: управляет анимацией и слоями */
