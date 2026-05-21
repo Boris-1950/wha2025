@@ -6,6 +6,11 @@ header {
   padding: 0;
   background-color: #cccccc; /* единый фон */
 }
+.header--home .header__top {
+  min-height: 90px;   /* ← вот это ты регулируешь */
+  height: auto;
+  padding: 16px 0;
+}
 
 /* Верхний блок шапки */
 .header__top {

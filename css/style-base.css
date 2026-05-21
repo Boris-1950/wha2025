@@ -36,7 +36,7 @@ p {
   margin-bottom: 0px;
   margin: 4px 0;
 
-  font-size: 14px;
+  font-size: 12px;
 }
 
 ul {
@@ -52,14 +52,18 @@ ul li {
 
 /* === Структурные контейнеры === */
 main {
-  margin-top: 5px;
+  margin-top: 10px;     /* расстояние от шапки */
+  margin-bottom: 20px;  /* расстояние до подвала */
+  padding: 0 10px;      /* внутренние отступы слева и справа */
+
+  margin-top: 3px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   background: none;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 section {
-  padding: 5px 5px;
+  padding: 3px 5px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -103,6 +107,7 @@ section {
 
 .logo__text,
 .logo__subtitle {
+  font-weight: 300; /* или 400 — выбери по вкусу */
   margin: 0; /* убирает внешние отступы, чтобы текст не раздвигался */
   line-height: 1.2; /* плотное вертикальное расстояние между строками */
   color: #fff; /* белый цвет текста — хорошо читается на тёмном фоне */
