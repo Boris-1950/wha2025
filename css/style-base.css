@@ -7,7 +7,8 @@
 
 html,
 body {
-  margin: 10;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 1.1;
@@ -227,8 +228,8 @@ justify-content: space-around - равномерно распределяет п
 Важно: При flex-direction: column ось меняется - justify-content работает по вертикальной оси, а align-items - по горизонтальной.*/
   position: relative; /* позволяет позиционировать дочерние элементы */
 
-  gap: 6px; /* расстояние между заголовком и описанием */
-  padding: 6px 12px; /* внутренние отступы */
+  gap: 4px; /* расстояние между заголовком и описанием */
+  padding: 4px 8px; /* внутренние отступы */
   animation: fadeIn 2s ease-in-out; /* плавное появление */
   z-index: 2; /* поднимает над фоном */
 }
