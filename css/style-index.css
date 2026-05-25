@@ -4,20 +4,7 @@
   margin: 0 auto;
   text-align: center;
 }
-.system-10c-title {
-  font-size: 1.5em; /* размер шрифта относительно базового */
-  margin-top: 12px; /* отступ сверху */
-  margin-bottom: 4px; /* отступ снизу */
-  font-weight: 500; /* визуальный акцент текста */
-  color: #0a0a0a;   /* Цвет*/
-  text-shadow: 0 2px 6px rgba(42,77,105,0.1); /* лёгкая тень — создаёт глубину */
-}
-.system-10c-title a {
-  text-decoration: none;
-}
-.system-10c-title a:hover {
-  text-decoration: none;
-}
+
 .main__values {
   max-width: 900px;           /* ограничивает ширину блока для читаемости */
   text-align: center;         /* выравнивает текст внутри по центру */
