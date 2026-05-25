@@ -1,5 +1,4 @@
 body {
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
   margin: 0;
   padding: 0;
 }
@@ -29,6 +28,5 @@ section {
 footer {
   text-align: center;
   font-size: 12px;
-  color: #666;
   padding: 10px 0;
 }

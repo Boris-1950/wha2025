@@ -7,6 +7,8 @@
 
 html,
 body {
+  background: linear-gradient(180deg, #8CA442 0%, #563F45 100%);
+    background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -29,7 +31,7 @@ h1,
 h2,
 h3 {
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
   text-align: left;
 }
 p {
@@ -63,6 +65,7 @@ main {
 }
 
 section {
+color: white;
   padding: 3px 5px;
   max-width: 900px;
   margin: 0 auto;
@@ -259,7 +262,7 @@ justify-content: space-around - равномерно распределяет п
 
 /* === Футер === */
 .footer-right {
-  color: #333;
+  color: #ffffff;
   font-size: 14px;
   text-align: center;
   padding: 4px 4px;
