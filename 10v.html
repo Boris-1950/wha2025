@@ -15,22 +15,21 @@
         line-height: 1.2;
         margin: 1em;
         background: #f9f9f9;
-        color: #333;
+        color: #000;
       }
 
       h1,
       h2 {
-        color: #004578;
+        color: #002d59;
       }
 
-      .section {
-        margin-bottom: 1em;
-      }
-
-      .contact {
-        background: #eef;
-        padding: 1em;
-        border-left: 4px solid #004578;
+      .hero {
+        background: #f7fbff;
+        color: #000;
+        padding: 1.5em;
+        border: 1px solid #c9d8ee;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(0, 69, 120, 0.08);
       }
     </style>
 
@@ -48,7 +47,7 @@
 
   <body>
     <!-- standard header with gray background -->
-    <header style="background-color: #bcd47c">
+    <header style="background-color: #7d9147">
       <div class="burger-wrapper">
         <button class="burger" id="burger">☰</button>
       </div>
@@ -84,7 +83,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
@@ -98,23 +97,21 @@
     </script>
 
     <!-- Основной блок страницы -->
+<header class="hero">
     <section id="system-10c" class="page-block">
-      <header class="hero">
+
         <h1>Система 10Ц: онтологическая система координат счастья</h1>
         <p class="subtitle">
           Достоинство — начало координат. Ценности — координаты. Счастье — среднее реализованных
           ценностей.
         </p>
-      </header>
 
-      <section id="author">
-        <h2>Автор</h2>
+              <h2>Автор</h2>
         <p>
           <strong>Борис Майоров</strong>
           — философ, архитектор семантических систем, основатель Всемирного агентства счастья
           (2025).
         </p>
-      </section>
 
       <section id="description">
         <h2>Описание системы</h2>
@@ -255,6 +252,7 @@
         </p>
       </section>
     </section>
+    </header>
   </body>
 </html>
 
