@@ -74,14 +74,7 @@
   </script>
   <body>
     <!-- примечание: высота верхней шапки задаётся в css/style-base.css в правилах .header__top и header.header--top -->
-    <header
-      class="header header--top"
-      style="
-        background-image: url('images/header-about.jpg');
-        background-size: cover;
-        background-position: right;
-      "
-    >
+    <header class="header header--top header--about">
       <div class="burger-wrapper">
         <button class="burger" id="burger">☰</button>
       </div>
@@ -117,7 +110,7 @@
       </div>
 
     </header>
-    <main>
+    <main class="text-panel">
       <!-- <h2>...</h2>-->
       <div class="about-columns">
         <div class="about-col">

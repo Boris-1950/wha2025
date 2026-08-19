@@ -7,14 +7,15 @@
 
 html,
 body {
-  background: linear-gradient(180deg, #8CA442 0%, #563F45 100%);
-    background-attachment: fixed;
+  background: linear-gradient(180deg, #8ca442 0%, #563f45 100%);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 1.1;
   text-decoration: none;
+  color: #222; /* цвет текста по умолчанию для читаемости */
 }
 
 h1 {
@@ -54,9 +55,9 @@ ul li {
 
 /* === Структурные контейнеры === */
 main {
-  margin-top: 10px;     /* расстояние от шапки */
-  margin-bottom: 20px;  /* расстояние до подвала */
-  padding: 0 10px;      /* внутренние отступы слева и справа */
+  margin-top: 10px; /* расстояние от шапки */
+  margin-bottom: 20px; /* расстояние до подвала */
+  padding: 0 10px; /* внутренние отступы слева и справа */
 
   margin-top: 3px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -64,8 +65,24 @@ main {
   margin-bottom: 3px;
 }
 
+/* === Панель с текстом: почти белый фон и тёмный текст для читаемости === */
+.text-panel {
+  background: #fbfbfb;
+  color: #222;
+  padding: 1.2rem;
+  margin: 1rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+}
+/* Гарантируем, что вложенный текст не будет белым из-за глобальных правил */
+.text-panel,
+.text-panel * {
+  color: #222 !important;
+}
+
 section {
-color: white;
+  color: white;
   padding: 3px 5px;
   max-width: 900px;
   margin: 0 auto;
@@ -206,13 +223,13 @@ color: white;
 }
 
 header.header--top {
-  min-height: 210px;
-  height: 210px;
+  min-height: 90px;
+  height: 90px;
 }
 
 header.header--top .header__top {
-  min-height: 210px;
-  height: 210px;
+  min-height: 90px;
+  height: 90px;
 }
 
 header {
