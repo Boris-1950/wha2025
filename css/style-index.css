@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.text-panel {
+  background: transparent;
+}
+.text-panel,
+.text-panel * {
+  color: #fff !important;
+}
+.text-panel h2 {
+  color: rgb(248, 135, 5) !important;
+}
+
 .main__values {
   max-width: 900px;           /* ограничивает ширину блока для читаемости */
   text-align: center;         /* выравнивает текст внутри по центру */
@@ -14,6 +25,13 @@
   align-items: center;        /* центрирует элементы по горизонтали */
   justify-content: center;    /* центрирует элементы по вертикали (если есть высота) */
 }
+.values__frame {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 16px;
+  background: transparent;
+}
 .values__grid {
   display: grid; /* включает CSS Grid — мощный инструмент для построения сеток */
   grid-template-columns: repeat(6, 1fr); /* создаёт 6 равных колонок */
@@ -22,7 +40,7 @@
   justify-items: center; /* выравнивает содержимое каждой ячейки по центру */
   border: 2px solid rgba(19, 128, 201, 0.15); /* тонкая рамка с прозрачным синим оттенком */
   padding: 12px 12px; /* внутренние отступы — сверху/снизу и по бокам */
-  background: #7a7151; /* светлый фон — тёплый, не белый */
+  background: transparent;
   max-width: 900px; /* ограничивает ширину сетки */
   border-radius: 12px; /* скруглённые углы — визуальная мягкость */
   overflow: hidden; /* обрезает всё, что выходит за границы блока */
